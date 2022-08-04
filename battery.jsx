@@ -1,4 +1,4 @@
-export const command = "date +\"%T %m-%d-%Y\"" 
+export const command = "/Users/sudhit/git/widget-bar/shell-scripts/battery.sh 2>/dev/null "
 
 export const refreshFrequency = 1000
 
@@ -24,7 +24,7 @@ export const render = ({output, error}) => {
       <div>Something went wrong: <strong>{String(error)}</strong></div>
     ) : (
       <div>
-        <p>{output}</p>
+        <p>{output} hrs rem</p>
       </div>
     );
   }
